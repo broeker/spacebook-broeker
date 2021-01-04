@@ -11,7 +11,7 @@ section: home
         </div>
         
         <div class="w-full md:flex-1 mt-8 md:mt-0 mb-4">
-            <strong class="text-sm text-gray-400 mt-0 top-0 !important">LATEST POSTS</strong>
+            <strong class="text-sm text-gray-400 mt-0 top-0 !important font-semibold">LATEST WRITING</strong>
             {% set latest_posts = collections.posts %}
             <ul class="mt-0 pt-0 !important">
             {% for post in latest_posts.slice(0,3) | reverse %}

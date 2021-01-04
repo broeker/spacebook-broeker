@@ -1,0 +1,21 @@
+{
+  "name": "~broeker",
+  "subtitle": "notes from the land of ice and snow",
+  "description": "Create a modern notebook to document or explain almost anything with spacebook.app",
+  "footer": "Made with ❤ in Minneapolis",
+  "url": "https://spacebook.app",
+  "githubUrl": "https://github.com/broeker/spacebook-broeker",
+  "githubBranch": "main",
+  "navigationStyle": "horizontal",
+  "emoji": "💥",
+  "enableSearch": true,
+  "enableDarkMode": true,
+  "enableEditButton": true,
+  "enableDatestamp": true,
+  "enableGithubLink": false,
+  "enableContact": false,
+  "enableNetlifyCMS": false,
+  "enableComments": false,
+  "enableEncryption": false,
+  "enablePageNavigation": true
+}

@@ -5,7 +5,7 @@ tags:
   - spacebook 
   - eleventy
 ---
-The day after I bought the [spacebook.app](https://spacebook.app) domain and launched my project, daughter #1 sent me a PDF containing a old-school zine that represented one of her freshman year final projects at the University of Minnesota. She took all of the photos at 38th and Chicago; I loved it but the PDF format was horrible! It took about 15 minutes to screenshoot and resize the images, and about 15 minutes to launch [Say our names](https://say-our-names.netlify.app/): 
+The day after I launched the [spacebook.app](https://spacebook.app) domain, daughter #1 sent me a PDF containing a old-school zine that represented one of her freshman year final projects at the University of Minnesota. She took all of the photos at 38th and Chicago over various weekends, assembled the words, etc. but a PDF is not a great format. I wanted to test my theory that you could spin up a spacebook for almost anything, and it worked. This took about 15 minutes to screenshoot and resize the images, and about 15 minutes to launch the [Say our names](https://say-our-names.netlify.app/) spacebook: 
 
 {% image "floyd.png" "George Floyd" %}
 
