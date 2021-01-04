@@ -1,5 +1,5 @@
 ---
-title: Hello, world and the monkey shine gang 
+title: Hello, world
 date: 2021-01-02 
 tags:
   - eleventy 

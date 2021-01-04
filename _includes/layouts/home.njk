@@ -8,7 +8,7 @@ section: home
           
         <div class="md:flex-1">
         
-            <img class="rounded-lg shadow-none mt-0 pt-0 !important" src="_includes/assets/images/citizen2.jpg" alt="Citizen Tim" />
+            <img class="rounded-lg shadow-none mt-0 pt-0 !important" src="_includes/assets/images/citizen.jpg" alt="Citizen Tim" />
             <em><center><small>On the job, Berkelely, CA (2019)</small></center></em>
         </div>
         
@@ -26,12 +26,11 @@ section: home
 
    <hr class="w-50 pr-8 pl-8 border-gray-100 dark:border-gray-600" />
  <div class="mt-8 flex align-text-top w-full mr-auto ml-auto space-x-12 px-6 md:px-6 lg:px-8 xl:px-12 justify-center flex-wrap-reverse mb-8 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-5xl"> 
-        
         <div class="md:flex-1 rounded-lg">
-           <strong class="text-sm text-gray-500 mt-0 top-0 !important">LINK BLOG</strong>
+           <strong class="text-sm text-gray-500 mt-0 top-0 !important">LINKS OF NOTE</strong>
             <ul class="listing">
             {%- for item in sheet.Links -%}
-                <li><small>{{ item.date }}</small> -- <a href="{{item.url}}" target="_blank noopener">{{ item.title }}</a></li>
+                <li class="pl-0 !important"><small>{{ item.date }}</small> -- <a href="{{item.url}}" target="_blank noopener">{{ item.title }}</a></li>
             {%- endfor -%}
             </ul>
         </div>

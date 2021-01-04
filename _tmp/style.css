@@ -1110,6 +1110,10 @@ nav ul li a.active {
   text-decoration: none;
 }
 
+.prose ul.listing ::before {
+  display: none;
+}
+
 .prose ul.spacelog ::before {
   display: none;
 }
@@ -1456,11 +1460,6 @@ nav ul li a.active {
 .border-gray-800 {
   --tw-border-opacity: 1 !important;
   border-color: rgba(31, 41, 55, var(--tw-border-opacity)) !important;
-}
-
-.border-red-900 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgba(127, 29, 29, var(--tw-border-opacity)) !important;
 }
 
 .hover\:border-gray-500:hover {
@@ -1824,11 +1823,6 @@ nav ul li a.active {
   padding-right: 1rem !important;
 }
 
-.py-6 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-
 .px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
@@ -1874,8 +1868,16 @@ nav ul li a.active {
   padding-left: 1rem !important;
 }
 
+.pr-8 {
+  padding-right: 2rem !important;
+}
+
 .pb-8 {
   padding-bottom: 2rem !important;
+}
+
+.pl-8 {
+  padding-left: 2rem !important;
 }
 
 .pt-16 {

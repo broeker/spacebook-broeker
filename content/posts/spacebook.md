@@ -5,7 +5,7 @@ tags:
   - eleventy
   - spacebook 
 ---
-During the 2020 pandemic I had to write a lot documentation for various projects, and took my free time to learn about better ways to do this.  Google Docs and Basecamp are great tools, but sometimes a simple website is the best way to effectively document and explain an idea or a project. 
+During 2020 I had to write a lot documentation for various projects, and took my free time to learn about better ways to do this.  Google Docs and Basecamp are great tools, but sometimes a simple website is the best way to effectively document and explain an idea or a project. 
 
 Meet [spacebook](https://spacebook.app/), which allows you to create a modern notebook to document or explain almost anything: 
 
@@ -19,4 +19,4 @@ This road led directly to [Eleventy](https://www.11ty.dev/) which quickly led to
 * 2 contributors 
 * 2 (conflicting) feature requests
 
-With not much more effort than creating a new Google Doc, anybody can spin up a new spacebook for anything. It is privacy first (with options for full password protection), writing focused, customizable, and very fun to work on. 
+With not much more effort than creating a new Google Doc, anybody can spin up a new spacebook for any reason in the world. It is privacy first (with options for full password protection), writing focused, customizable, and very fun to work on. 

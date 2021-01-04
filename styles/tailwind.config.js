@@ -42,7 +42,7 @@ module.exports = {
                 'text-decoration': 'none',
               }
             },
-            'ul.contains-task-list': {
+            'ul.listing': {
               '::before': {
                 display: 'none',
               }
