@@ -1,14 +1,22 @@
 <div class="fixed w-full top-0 left-0 z-10 "> 
     <nav class="flex h-16 md:h-20 items-center bg-white dark:bg-gray-900 z-20 fixed top-0 left-0 right-0 border-b border-gray-100 px-0 py-2 dark:bg-dark dark:border-gray-800 transition-colors duration-200">
+       <a href="/"><img src="/_includes/assets/images/broeker_gray_64.png" class="pl-4 avatar" height="64px" width="64px" /></a>
+    
       <div class="hidden md:block space-y-4 w-full p-4">
+        
         <a class="no-underline text-gray-600 hover:text-gray-800 font-bold dark:text-gray-500 items-center" href="/">
           <span class="text-xl">{{ site.name }}</span>
           {% if site.subtitle %}
-          <span class="block mt-1 text-sm text-gray-500 hover:text-gray-600 dark:text-gray-600 font-normal text-xs sm:text-xs md:text-sm lg:text-sm w-full"> {{ site.subtitle }}</span>
+          <span class="block mt-1 pl-3 text-sm text-gray-500 hover:text-gray-600 dark:text-gray-600 font-normal text-xs sm:text-xs md:text-sm lg:text-sm w-full"> {{ site.subtitle }}</span>
           {% endif %}
          </a>
+         
       </div>
+     
+     {# <div class="bg-avatar">xxxx</div> #}
+     
       <div class="mr-2 relative w-full md:w-64">
+      
        {% if site.enableSearch == 1 %}
         <input  aria-label="Search" x-data="{ isOpen: true }" x-bind:class="{ 'hidden': !isOpen }" type="search" placeholder="Search..." class="ml-2 w-60 bg-gray-50 dark:bg-gray-800 appearance-none border dark:border-gray-700 rounded py-2 px-2 placeholder-gray-300 leading-tight focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-700 ring-opacity-50 border-gray-200" id="searchField">
         <ul tabindex="0" class="bg-white dark:bg-gray-200 z-50 shadow-md p-0 w-full list-none m-0 absolute left-0 md:right-0 bg-white rounded mt-1 top-100 z-50" id="searchResults"></ul>
@@ -31,6 +39,7 @@
       {% endif %}
     </nav>  
     {% if site.navigationStyle == 'horizontal' %}
+    
       <div class="mt-20">
       {% include "components/nav.njk" %}
       </div>

@@ -19,6 +19,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      backgroundImage: theme => ({
+        'avatar': "url('_includes/assets/images/broeker_cropped.png')",
+       }),
       typography: {
         DEFAULT: {
           css: {

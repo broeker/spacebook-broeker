@@ -9,6 +9,8 @@ const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 module.exports = function(eleventyConfig) {
+    // A useful way to reference the context we are runing eleventy in
+    let env = process.env.ELEVENTY_ENV;
   // eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents); 
   eleventyConfig.addPlugin(embedEverything);
@@ -99,23 +101,23 @@ module.exports = function(eleventyConfig) {
 
    // Creates custom collection "pages"
    eleventyConfig.addCollection("pages", function(collection) {
-    return collection.getFilteredByGlob("pages/*.md");
+    return collection.getFilteredByGlob("content/pages/*.md");
    });
 
    // Creates custom collection "posts"
-  //  eleventyConfig.addCollection("posts", function(collection) {
-  //   const coll = collection.getFilteredByGlob("posts/*.md");
+   eleventyConfig.addCollection("posts", function(collection) {
+    const coll = collection.getFilteredByGlob("content/posts/*.md");
   
-  //   for(let i = 0; i < coll.length ; i++) {
-  //     const prevPost = coll[i-1];
-  //     const nextPost = coll[i + 1];
+    for(let i = 0; i < coll.length ; i++) {
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
   
-  //     coll[i].data["prevPost"] = prevPost;
-  //     coll[i].data["nextPost"] = nextPost;
-  //   }
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+    }
   
-  //   return coll;
-  // });
+    return coll;
+  });
     
 
    // Creates custom collection "results" for search
@@ -233,6 +235,7 @@ module.exports = function(eleventyConfig) {
       listType: "ol"
     })
   );
+  env = (env=="seed") ? "prod" : env;
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
@@ -248,7 +251,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: ".",
       includes: "_includes",
-      data: "_data",
+      data: `_data/${env}`,
       output: "_site"
     }
   };

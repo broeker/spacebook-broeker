@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "scripts": {
-    "start": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css &&  ./node_modules/.bin/cleancss -o _site/style.css _site/style.css",
+    "start": "cross-env ELEVENTY_ENV=dev eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
+    "build": "cross-env ELEVENTY_ENV=prod ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss styles/tailwind.css --o _site/style.css &&  ./node_modules/.bin/cleancss -o _site/style.css _site/style.css",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "seed": "cross-env ELEVENTY_ENV=seed eleventy"
   },
   "repository": {
     "type": "git",
@@ -38,8 +39,10 @@
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.1.0",
+    "axios": "^0.21.1",
     "clean-css": "^4.2.1",
     "clean-css-cli": "^4.3.0",
+    "cross-env": "^7.0.3",
     "elasticlunr": "^0.9.5",
     "eleventy-plugin-embed-everything": "^1.9.4",
     "eleventy-plugin-nesting-toc": "^1.2.0",
