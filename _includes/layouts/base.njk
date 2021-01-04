@@ -1,7 +1,7 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
   {% include "components/head.njk" %}
-  <body>
+  <body class="bg-gray-50">
     <div id="app" class="h-screen bg-gray-50 dark:bg-gray-900">
       {% include "components/header.njk" %}
       {% if site.navigationStyle == "vertical" %}
