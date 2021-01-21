@@ -21,3 +21,5 @@ fields:
   - type: number
     name: order
     label: order
+pages:
+- content/pages/foo.md
