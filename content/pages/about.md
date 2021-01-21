@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 My name is Tim Broeker (aka Citizen Tim) and I have been building the web since 1994. Currently, I am a co-founder and technical director at [Electric Citizen](https://www.electriccitizen.com/), a digital agency that does great work for great clients and causes in the public sector. Many years ago, I had a client and friend who introduced me to the concept of the [Winter Count](https://cutt.ly/djoBsTw), a Lakota tradition of marking the most significant event of each year with drawings or pictographs. If you'd like to learn more about me, feel free to read my version of a winter count below. 
 ![enter image description here](/_includes/assets/images/broeker_gray_300.png)
-<img src="/_includes/assets/images/broeker_gray_300.png" class="avatar shadow-none pr-4 !important" height="200px" width="200px" />
+<img src="../../_includes/assets/images/broeker_gray_300.png" class="avatar shadow-none pr-4 !important" height="200px" width="200px" />
 
 ->*Pandemic World Headquarters, Minneapolis, MN (2020)*<-
 
@@ -61,5 +61,5 @@ My name is Tim Broeker (aka Citizen Tim) and I have been building the web since 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTM3MzMyMzVdfQ==
+eyJoaXN0b3J5IjpbODIyMTU4Njk0XX0=
 -->
