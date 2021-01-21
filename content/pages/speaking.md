@@ -8,6 +8,8 @@ eleventyNavigation:
 ---
 Public speaking has become an important part of my life over the past several years. There is something deeply satisfying about taking an idea from conception to a finished talk, and ultimately delivering it to an audience of peers, learners, and hangers-on. 
 
+[xcvasdfasdf](google.com)
+
 * [Javascript is Coming to Eat You](https://www.youtube.com/watch?v=n3VSJo8y4DU), DrupalCon Global 2020, *Worldwide* 
 * [Javascript is Coming to Eat You](https://www.youtube.com/watch?v=U6GaFWERY1A&feature=youtu.be), BadCamp 2019, *Berkeley, CA*
 * [Javascript is Coming to Eat You](https://www.youtube.com/watch?v=MpOJnm5oQqk&list=PLztBsFl4ot8vatMIOcbJDgWzbsXOSIElJ&index=8), Twin Cities DrupalCamp 2019, *Mpls, MN*
@@ -22,3 +24,6 @@ Public speaking has become an important part of my life over the past several ye
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY1OTQxNTU0OV19
+-->
